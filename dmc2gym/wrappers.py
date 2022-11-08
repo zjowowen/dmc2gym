@@ -175,3 +175,8 @@ class DMCWrapper(core.Env):
         return self._env.physics.render(
             height=height, width=width, camera_id=camera_id
         )
+
+    def get_time(self):
+        return self._env.physics.time()
+
+
